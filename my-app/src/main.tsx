@@ -9,6 +9,7 @@ import EditarProduto from './routes/EditarProduto/index.tsx'
 import Error from './routes/Error/index.tsx'
 import Conteudo from './components/Conteudo/index.tsx'
 import Lampada from './components/Lampada/index.tsx'
+import UsuariosGit from './routes/UsuariosGit/index.tsx'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/lampada',
         element: <Lampada/>
+      },
+      {
+        path: '/users/git',
+        element: <UsuariosGit/>
       }
     ]
   }
