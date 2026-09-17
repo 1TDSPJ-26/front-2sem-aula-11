@@ -26,8 +26,8 @@ export default function Produtos(){
             </thead>
             <tbody>
                 {produtos.map( (p,i)=>(
-                    <tr>
-                        <td key={i}>{p.id}</td>
+                    <tr key={i}>
+                        <td>{p.id}</td>
                         <td>{p.nome}</td>
                         <td>{p.preco}</td>
                         <td><Link to={`/editar-produto/${p.id}`}><Editar/></Link></td>
