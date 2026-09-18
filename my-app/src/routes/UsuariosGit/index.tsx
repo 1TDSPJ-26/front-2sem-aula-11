@@ -45,7 +45,7 @@ export default function UsuariosGit(){
             }
         }
 
-        loadingData();
+        //loadingData();
 
 
     },[] );
