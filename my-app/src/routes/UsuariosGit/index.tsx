@@ -45,7 +45,7 @@ export default function UsuariosGit(){
             }
         }
 
-        //loadingData();
+        loadingData();
 
 
     },[] );
@@ -55,7 +55,7 @@ export default function UsuariosGit(){
             <h2>Lista de Usuários Git</h2>
             <ul>
                 {usuarios.map( (u,i)=>(
-                    <li key={i}>{u.id} - {u.login} - <img src={u.avatar_url} alt={u.login} width={40} /></li>
+                    <li key={i}>{u.id} - {u.login} - <a href={u.html_url} target="_blank"><img src={u.avatar_url} alt={u.login} width={40} /></a></li>
                 ))}
             </ul>
         </main>

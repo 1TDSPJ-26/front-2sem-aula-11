@@ -12,7 +12,7 @@ export default function Conteudo(){
     
     function alteraNomeState(){
         const nome: string | null = prompt("Digite o novo nome");
-        setNomeState((valorAnterior) => valorAnterior = nome);
+        setNomeState(nome);
         console.log("Nome alterado : ", nomeState);
     }
 
